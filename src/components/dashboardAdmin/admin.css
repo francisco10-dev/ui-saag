@@ -1,0 +1,37 @@
+
+body {
+    font-family: 'GOTHAM Medium' !important;
+    font-size: 18px !important;
+    color: #333 !important;
+}
+
+.Input, .slect {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    transition: box-shadow 0.3s;
+    appearance: none;
+}
+
+.Input:focus, .slect:focus {
+    box-shadow: 0 0 5px rgba(53, 170, 63, 0.7);
+}
+
+.tabla {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla table th,
+.tabla table td {
+    border: none;
+    padding: 8px;
+    text-align: left;
+}
+

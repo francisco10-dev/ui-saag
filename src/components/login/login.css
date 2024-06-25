@@ -1,0 +1,202 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px #ccc;
+    border-radius: 14px 0px 0px 14px;
+    color: rgb(14, 15, 15);
+    border-right: none;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-top: 6%;
+    margin-left: 28%;
+}
+  
+.form-group {
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+  
+.btnLogin {
+    padding: 10px 15px;
+    background-color: rgb(27, 61, 81);
+    color: #e4d6d6;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 8%;
+    position: relative;
+}
+  
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+.error {
+    animation: shake 0.5s ease-in-out;
+    border-color: red;
+}
+
+#acibLogo2{
+    display: none;
+}
+
+  
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+}
+
+.contenedor-imagenes {
+    display: flex;
+    align-items: center;
+    margin-top: 5.2%;
+}
+
+.divider-vertical {
+    width: 1px; /* Ancho de la línea vertical */
+    height: 100px; /* Altura de la línea vertical */
+    background-color: #ffffff; /* Color de la línea vertical */
+    margin: 0 10px; /* Espacio entre la línea y las imágenes */
+}
+
+.imgSA{
+    width: 335px;
+}
+
+.view {
+    margin-top: 2% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    .view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    .login-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px #ccc;
+        border-radius: 14px 0px 0px 14px;
+        color: rgb(14, 15, 15);
+        border-right: none;
+        animation: fadeIn 2s ease-in-out forwards;
+        margin-top: 5%;
+    }
+
+    #acibLogo{
+        display: none;
+    }
+
+    #acibLogo2{
+        display: block;
+        width: 220px;
+        margin-left: 35%;
+        margin-top: 3%;
+    }
+
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logos{
+        display: inline;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 1.8s ease-in-out forwards;
+    }
+
+    .contenedor-imagenes {
+        display: inline;
+        align-items: center;
+    }
+
+    .divider-vertical{
+        display: none;
+    }
+
+    body {
+        background-attachment: fixed; 
+        background-position: center top;
+    }
+
+    .custom-label {
+        color: white;
+    }
+
+}
+
+.showPasswordBtn {
+    color: white;
+}
+  
+.password-toggle {
+    position: absolute;
+    top: 56%;
+    right: 8px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnLogin.loading {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
